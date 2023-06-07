@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Clipboard landing page</title>
+</head>
+
+<style>
+  @media (max-width: 640px){
+    body {
+      background-image: url('../images/bg-header-mobile.png');
+    }
+  }
+  @media (min-width: 641px){
+    body {
+      background-image: url('../images/bg-header-desktop.png');
+    }
+  }
+</style>
+
+<body class="bg-no-repeat bg-contain">
+  <!-- Header ==> 1st section ==> Header (logo->h2->p->cta->cta)-->
+  <header>
+    <section class="flex flex-col items-center">
+      <header>
+        <!--  LOGO  -->
+        <img src="../images/logo.svg" alt="Logo Clipboard" 
+        class="w-26 h-26 mt-24"
+        >
+      </header>
+      <main class="text-center w-80 lg:w-7/12">
+        <!--  H2   -->
+        <h2
+        class="mt-12 font-baijamjuree text-3xl lg:text-4xl font-semibold text-center text-[#4c545d]"
+        >
+        A history of everything you copy</h2>
+        <!-- P  -->
+        <p 
+        class="mt-5 text-[#9fabb2] font-baijamjuree text-center px-2"
+        >
+        Clipboard allows you to track and organize everything you copy. Instantly access your clipbord on all your devices.</p>
+      </main>
+      <footer class="flex flex-col lg:flex-row mt-10 lg:gap-4">
+        <!-- [!] FALTA AGREGAR BOX SHADOW PARA DARLE PROFUNDIDAD A LOS BOTONES -->
+        <button 
+        class="w-80 lg:w-56 h-14 bg-[#26baa4] text-white font-baijamjuree rounded-full font-semibold drop-shadow-lg"
+        >
+        Download for iOS</button>
+        <!-- botón CTA 2 -->
+        <button
+        class="w-80 lg:w-56 h-14 mt-5 lg:mt-0 bg-[#6173ff] text-white font-baijamjuree rounded-full font-semibold drop-shadow-lg"
+        >
+        Download for Mac</button>
+      </footer>
+    </section>
+  </header>
+  <!-- Main ==>  -->
+  <main>
+    <!-- 2nd section ==> Features (h3->p->img->benefit(x3==>h3->p)) -->
+    <section>
+      <header class="mt-36 text-center lg:flex lg:flex-col lg:items-center lg:justify-center">
+        <h3 class="font-baijamjuree text-3xl font-semibold text-[#4c545d]">Keep track of your snippets</h3>
+        <p class="mt-5 text-[#9fabb2] font-baijamjuree px-10 lg:w-[47%]">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+      </header>
+      <main>
+        <section class="flex flex-col lg:flex-row">
+          <img class="mt-16 px-8 lg:px-0 lg:-ml-8 lg:w-[55%]" src="../images/image-computer.png" alt="Computer">
+          <aside class="lg:flex lg:flex-col lg:w-[35%]">
+            <article class="mt-16 lg:mt-36 text-center lg:text-justify lg:px-20">
+              <h3 class="font-baijamjuree text-2xl font-semibold text-[#4c545d]">Quick Search</h3>
+              <p class="mt-4 text-[#9fabb2] font-baijamjuree px-10 lg:px-0 lg:mt-4">Easily search your snippets by content, category, web address, application, and more.</p>
+            </article>
+            <article class="mt-16 text-center lg:text-justify lg:px-20">
+              <h3 class="font-baijamjuree text-2xl font-semibold text-[#4c545d]">iCloud Sync</h3>
+              <p class="mt-4 text-[#9fabb2] font-baijamjuree px-10 lg:px-0 lg:mt-4">Instantly saves and syncs snippets across all your devices.</p>
+            </article>
+            <article class="mt-16 text-center lg:text-justify lg:px-20">
+              <h3 class="font-baijamjuree text-2xl font-semibold text-[#4c545d]">Complete History</h3>
+              <p class="mt-4 text-[#9fabb2] font-baijamjuree px-10 lg:px-0 lg:mt-4">Retrieve any snippets from the first moment you started using the app.</p>
+            </article>
+          </aside>
+        </section>
+      </main>
+    </section>
+    <!-- 3rd section ==> Info card (h3->p->img) -->
+    <section class="mt-36 text-center flex flex-col lg:items-center lg:justify-center">
+      <header class="lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
+        <h3 class="font-baijamjuree text-3xl font-semibold text-[#4c545d]">Access Clipboard Anywhere</h3>
+        <p class="mt-5 text-[#9fabb2] font-baijamjuree px-8 lg:px-0 lg:w-9/12">Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+      </header>
+      <footer>
+        <img class="mt-16 px-4" src="../images/image-devices.png" alt="Devices">
+      </footer>
+    </section>
+    <!-- 4th section ==> Benefits (h3->p->article(x3->i->h)) -->
+    <section class="mt-36 text-center">
+      <header>
+        <h3 class="font-baijamjuree text-3xl font-semibold text-[#4c545d]">Supercharge your workflow</h3>
+        <p class="mt-5 text-[#9fabb2] font-baijamjuree px-8">We've got the tools to boost your productivity.</p>
+      </header>
+      <main>
+        <section class="mt-20 text-center lg:flex lg:flex-row lg:justify-between lg:px-20">
+          <article class="flex flex-col items-center justify-center lg:w-[30%]">
+            <img src="../images/icon-blacklist.svg" alt="Icon Blacklist">
+            <h4 class="mt-5 font-baijamjuree text-2xl font-semibold text-[#4c545d]">Create blacklists</h4>
+            <p class="mt-5 text-[#9fabb2] font-baijamjuree px-8">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          </article>
+          <article class="flex flex-col items-center justify-center mt-14 lg:mt-0 lg:w-[30%]">
+            <img src="../images/icon-text.svg" alt="Icon Text">
+            <h4 class="mt-5 font-baijamjuree text-2xl font-semibold text-[#4c545d]">Plain text snippets</h4>
+            <p class="mt-5 text-[#9fabb2] font-baijamjuree px-8">Remove unwanted formatting from copied text for a consistent look.</p>
+          </article>
+          <article class="flex flex-col items-center justify-center mt-14 lg:mt-0 lg:w-[30%]">
+            <img src="../images/icon-preview.svg" alt="Icon Preview">
+            <h4 class="mt-5 font-baijamjuree text-2xl font-semibold text-[#4c545d]">Sneak preview</h4>
+            <p class="mt-5 text-[#9fabb2] font-baijamjuree px-8">Quick preview of all snippets on your Clipboard for easy access.</p>
+          </article>
+        </section>
+      </main>
+    </section>
+    <!-- 5th section ==> Sponsors (img) -->
+    <section class="mt-36">
+      <main class="flex flex-col items-center justify-center lg:flex-row lg:justify-around lg:px-20">
+        <img class="mb-20" src="../images/logo-google.png" alt="Logo Google">
+        <img class="mb-20" src="../images/logo-ibm.png" alt="Logo IBM">
+        <img class="mb-20" src="../images/logo-microsoft.png" alt="Logo Microsoft">
+        <img class="mb-20" src="../images/logo-hp.png" alt="Logo HP">
+        <img class="mb-20" src="../images/logo-vector-graphics.png" alt="Logo Vector Graphics">
+      </main>
+    </section>
+    <!-- 6th section ==> CTA (h3->p->btn1->btn2)-->
+    <section class="mt-20 flex flex-col items-center">
+      <main class="text-center w-80 lg:w-[45%]">
+        <h2
+        class="font-baijamjuree text-3xl font-semibold text-center text-[#4c545d]"
+        >
+        Clipboard for iOS and Mac OS</h2>
+        <!-- P  -->
+        <p 
+        class="mt-5 text-[#9fabb2] font-baijamjuree text-center px-2"
+        >
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you're ready to start adding to your clipboard..</p>
+      </main>
+      <footer class="flex flex-col mt-10 lg:flex-row lg:gap-6">
+        <!-- [!] FALTA AGREGAR BOX SHADOW PARA DARLE PROFUNDIDAD A LOS BOTONES -->
+        <button 
+        class="w-80 lg:w-56 h-14 bg-[#26baa4] text-white font-baijamjuree rounded-full font-semibold drop-shadow-lg"
+        >
+        Download for iOS</button>
+        <!-- botón CTA 2 -->
+        <button
+        class="w-80 lg:w-56 h-14 mt-5 lg:mt-0 bg-[#6173ff] text-white font-baijamjuree rounded-full font-semibold drop-shadow-lg"
+        >
+        Download for Mac
+        </button>
+      </footer>
+    </section>
+  </main>
+  <footer>
+    <section class="mt-36 bg-gray-100 flex flex-col items-center justify-center text-center lg:flex-row lg:justify-between lg:px-20 lg:py-8">
+      <header>
+        <img class="mt-12 w-16 h-16 lg:mt-0" src="../images/logo.svg" alt="Logo Clipboard">
+      </header>
+      <main class="mt-12 lg:mt-0 text-[#4c545d] font-baijamjuree text-xl flex flex-col lg:flex-row lg:flex-wrap lg:justify-around lg:w-[60%] lg:text-justify">
+        <div>
+          <ul>
+            <li class="mb-4">FAQs</li>
+            <li class="mb-4">Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-4">Privacy Policy</li>
+            <li class="mb-4">Press Kit</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-4">Install Guide</li>
+          </ul>
+        </div>
+      </main>
+      <footer class="mt-12 mb-8 lg:my-0 flex flex-row justify-around px-20 w-full lg:w-1/5">
+        <img src="../images/icon-facebook.svg" alt="Icon Facebook">
+        <img src="../images/icon-twitter.svg" alt="Icon Twitter">
+        <img src="../images/icon-instagram.svg" alt="Icon Instagram">
+      </footer>
+    </section>
+    <section>
+      <p class="text-sm text-center text-black py-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="text-[#3e52a3]" href="https://linkedin.com/in/lalvarezweb" target="_blank">@lalvarezweb</a>.
+      </p>
+    </section>
+    <!-- 7th section ==> Footer (img->ul>li*5->flex-row(4img)) -->
+  </footer>
+</body>
+
+</html>
